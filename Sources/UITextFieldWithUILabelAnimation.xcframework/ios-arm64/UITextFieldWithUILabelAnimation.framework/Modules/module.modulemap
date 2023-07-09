@@ -1,0 +1,11 @@
+framework module UITextFieldWithUILabelAnimation {
+  umbrella header "UITextFieldWithUILabelAnimation.h"
+
+  export *
+  module * { export * }
+}
+
+module UITextFieldWithUILabelAnimation.Swift {
+  header "UITextFieldWithUILabelAnimation-Swift.h"
+  requires objc
+}

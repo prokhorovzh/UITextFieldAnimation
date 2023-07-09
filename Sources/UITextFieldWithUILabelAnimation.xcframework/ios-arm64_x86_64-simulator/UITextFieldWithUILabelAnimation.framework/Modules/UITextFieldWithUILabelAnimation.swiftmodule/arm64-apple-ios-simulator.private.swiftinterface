@@ -1,0 +1,26 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.8 (swiftlang-5.8.0.124.2 clang-1403.0.22.11.100)
+// swift-module-flags: -target arm64-apple-ios16.4-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name UITextFieldWithUILabelAnimation
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+import Swift
+import UIKit
+@_exported import UITextFieldWithUILabelAnimation
+import _Concurrency
+import _StringProcessing
+@objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class TextFieldWithLabelView : UIKit.UIView {
+  @_Concurrency.MainActor(unsafe) public var textFieldHeight: CoreFoundation.CGFloat
+  @_Concurrency.MainActor(unsafe) public var textField: UIKit.UITextField {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public var titleLabel: UIKit.UILabel {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) @objc dynamic public init()
+  @objc deinit
+}
+extension UITextFieldWithUILabelAnimation.TextFieldWithLabelView : UIKit.UITextFieldDelegate {
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func textFieldDidBeginEditing(_ textField: UIKit.UITextField)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func textFieldDidEndEditing(_ textField: UIKit.UITextField)
+}
